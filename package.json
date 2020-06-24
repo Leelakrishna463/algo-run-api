@@ -1,0 +1,20 @@
+{
+  "name": "algo-run-api",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.8.0"
+  },
+  "description": "API to handle Search and Sort Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "NODE_ENV=production node index"
+  },
+  "author": "Lee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
