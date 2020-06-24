@@ -27,7 +27,7 @@ app.use(logger('tiny'));
 //Using Request body as JSON
 app.use(bodyParser.json());
 
-app.use('/',inde)
+app.use('/',indexRouter);
 app.use('/search', searchRouter);
 app.use('/sort', sortRouter);
 
