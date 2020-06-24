@@ -3,7 +3,18 @@ const searchRouter = express.Router();
 const linearSearch = require('../src/linearSearch');
 const binarySearch = require('../src/binarySearch');
 
-//Router for Linear Search
+
+//Search index router
+searchRouter.route('/')
+    .all((req,res,next) =>{
+        res.status(200).json({
+            "Search" : "Contains Linear Search and Binary Search"
+        });
+    });
+
+
+
+//Router for Linear Search 
 searchRouter.route('/linearsearch')
     .get((req, res, next) => {
         res.status(200).json(linearSearch.Details);

@@ -7,6 +7,15 @@ const insertionsort = require('../src/insertionsort');
 const mergesort = require('../src/mergesort');
 const quicksort = require('../src/quicksort');
 
+//sort index router
+sortRouter.route('/')
+    .all((req,res,next) =>{
+        res.status(200).json({
+            "Sort" : "Contains Selection_sort, Insertion_sort, Bubble_sort, Merge_sort, Quick_sort"
+        });
+    });
+
+//Router for Bubblesort
 sortRouter.route('/bubblesort')
     .get((req, res, next) => {
         res.status(200).json(bubblesort.Details);
@@ -18,7 +27,7 @@ sortRouter.route('/bubblesort')
         });
     });
 
-
+//Router for Selectionsort
 sortRouter.route('/selectionsort')
     .get((req, res, next) => {
         res.status(200).json(selectionsort.Details);
@@ -30,7 +39,7 @@ sortRouter.route('/selectionsort')
         });
     });
 
-
+//Router for insertionsort
 sortRouter.route('/insertionsort')
     .get((req, res, next) => {
         res.status(200).json(insertionsort.Details);
@@ -42,7 +51,7 @@ sortRouter.route('/insertionsort')
         });
     });
 
-
+//Router for mergesort
 sortRouter.route('/mergesort')
     .get((req, res, next) => {
         res.status(200).json(mergesort.Details);
@@ -54,7 +63,7 @@ sortRouter.route('/mergesort')
         });
     });
 
-
+//Rotuer for quicksort
 sortRouter.route('/quicksort')
     .get((req, res, next) => {
         res.status(200).json(quicksort.Details);

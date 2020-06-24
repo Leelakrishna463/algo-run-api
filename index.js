@@ -9,6 +9,7 @@ const app = express();
 //Search Router and Sort Router
 var searchRouter = require('./routes/searchRouter');
 var sortRouter = require('./routes/sortRouter');
+var indexRouter = require('./routes/indexRouter');
 
 //Setting Port and Development Environment
 const PORT = process.env.PORT || 3000;
@@ -26,6 +27,7 @@ app.use(logger('tiny'));
 //Using Request body as JSON
 app.use(bodyParser.json());
 
+app.use('/',inde)
 app.use('/search', searchRouter);
 app.use('/sort', sortRouter);
 

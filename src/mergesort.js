@@ -1,4 +1,4 @@
-
+//Description of mergesort
 exports.Details = {
     'Description': "Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves",
     'Time Complexity': {
@@ -8,6 +8,9 @@ exports.Details = {
     },
     'Space Complexitity': 'O(n)'
 }
+
+
+//Merge Sort Recursive implementation.
 
 function merge(arr1, arr2) {
     let i = 0, j = 0, k = 0, m = arr1.length, n = arr2.length;

@@ -1,3 +1,4 @@
+//Description of selection sort
 exports.Details = {
     'Description': "The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.\n1) The subarray which is already sorted.\n2) Remaining subarray which is unsorted",
     'Time Complexity': {
@@ -18,7 +19,7 @@ exports.Details = {
 }
 
 
-
+//Selection sort implementation
 exports.ssort = (array) => {
     let alen = array.length;
     for (let i = 0; i < alen - 1; i++) {
