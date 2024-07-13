@@ -1,5 +1,5 @@
-# algo-run-api
-API to handle search and sort Algorithms
+# Algo-Run
+Built using NodeJS, this application provides interface for searching and sorting values for given data
 
 [Visit Project](https://algo-run-api.herokuapp.com/)
 
